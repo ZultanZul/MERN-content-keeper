@@ -337,6 +337,11 @@ input {
   color: #888;
 }
 
+.form-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
 input[type='text'],
 input[type='email'],
 input[type='phone'],
@@ -396,10 +401,32 @@ table th {
   margin-right: 0.6rem;
 }
 
+/* Animation Styles */
+
+.item-enter {
+  opacity: 0;
+}
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 100ms ease-in;
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 100ms ease-in;
+}
+
 /* Mobile Styles */
 @media (max-width: 700px) {
   .hide-sm {
     display: none;
+  }
+
+  .form-container {
+    width: 100%;
+    margin: 0 auto;
   }
 
   .grid-2,
